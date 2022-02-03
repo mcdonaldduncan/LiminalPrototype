@@ -11,10 +11,10 @@ public class SelectionManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 mp = Input.mousePosition;
-            Ray ray = Camera.main.ScreenPointToRay(mp);
+            Vector3 mousePosition = Input.mousePosition;
+            Ray selectionRay = Camera.main.ScreenPointToRay(mousePosition);
             RaycastHit hitSelection = new RaycastHit();
-            bool hit = Physics.Raycast(ray, out hitSelection);
+            bool hit = Physics.Raycast(selectionRay, out hitSelection);
 
             if (hit)
             {
@@ -30,8 +30,6 @@ public class SelectionManager : MonoBehaviour
         {
             ringRotator.shouldRotate = !ringRotator.shouldRotate;
         }
-
-
     }
 
 

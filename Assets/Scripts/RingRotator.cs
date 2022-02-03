@@ -13,7 +13,6 @@ public class RingRotator : MonoBehaviour
         rotationSpeed = Random.Range(-1f, 1f);
         if (rotationSpeed > -.2f && rotationSpeed < .2f)
         {
-            
             rotationSpeed = Random.Range(.2f, 1f);
         }
     }
