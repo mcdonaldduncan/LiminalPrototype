@@ -4,4 +4,7 @@ Align the stars to construct the Big Dipper, click on a ring to select, use the 
 
 [Prototype](https://mcdonaldduncan.github.io/StarScapePrototype/WebGL/Builds/index.html)
 
+Select Ring: Click
+Stop/Start Ring: Space
+
 
